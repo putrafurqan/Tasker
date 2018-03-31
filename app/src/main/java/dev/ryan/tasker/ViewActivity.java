@@ -23,7 +23,7 @@ import dev.ryan.tasker.data.TaskContract.Task;
 import dev.ryan.tasker.data.DbHelper;
 
 public class ViewActivity extends AppCompatActivity {
-
+    //Test Comment
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
