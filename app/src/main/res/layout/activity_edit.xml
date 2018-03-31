@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:onClick="intentView"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:onClick="getInputInsert"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:onClick="getInputDelete"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:onClick="getInputUpdate"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task "/>
+
+        <EditText
+            android:id="@+id/task_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time"
+            android:onClick="pickTime"/>
+
+        <EditText
+            android:id="@+id/task_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description..."/>
+
+        <EditText
+            android:id="@+id/task_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Priority"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/delete_task_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Delete/Update Task (ID)" />
+</LinearLayout>
+
